@@ -13,7 +13,7 @@ app.use(express.static('public'))
 app.use(express.json())
 
 //Rutas
-app.use('/api/wallet', require('./routes/wallet.js') )
+app.use('/api/', require('./routes/wallet.js') )
 
 //Escuchar peticiones
 app.listen(process.env.PORT, () => console.log(`Server on port ${process.env.PORT} 😋`));
